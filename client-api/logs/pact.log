@@ -1,5 +1,5 @@
-I, [2020-06-08T16:27:40.747854 #72346]  INFO -- : Registered expected interaction GET /balance/1
-D, [2020-06-08T16:27:40.748158 #72346] DEBUG -- : {
+I, [2020-06-08T18:23:47.117649 #92963]  INFO -- : Registered expected interaction GET /balance/1
+D, [2020-06-08T18:23:47.117904 #92963] DEBUG -- : {
   "description": "a request for account",
   "providerState": "one client with your account",
   "request": {
@@ -19,8 +19,8 @@ D, [2020-06-08T16:27:40.748158 #72346] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2020-06-08T16:27:40.750413 #72346]  INFO -- : Received request GET /balance/1
-D, [2020-06-08T16:27:40.750535 #72346] DEBUG -- : {
+I, [2020-06-08T18:23:47.119954 #92963]  INFO -- : Received request GET /balance/1
+D, [2020-06-08T18:23:47.120081 #92963] DEBUG -- : {
   "path": "/balance/1",
   "query": "",
   "method": "get",
@@ -32,8 +32,8 @@ D, [2020-06-08T16:27:40.750535 #72346] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2020-06-08T16:27:40.750789 #72346]  INFO -- : Found matching response for GET /balance/1
-D, [2020-06-08T16:27:40.750876 #72346] DEBUG -- : {
+I, [2020-06-08T18:23:47.120359 #92963]  INFO -- : Found matching response for GET /balance/1
+D, [2020-06-08T18:23:47.120469 #92963] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json; charset=utf-8"
@@ -44,6 +44,6 @@ D, [2020-06-08T16:27:40.750876 #72346] DEBUG -- : {
     "balance": 100
   }
 }
-I, [2020-06-08T16:27:40.756292 #72346]  INFO -- : Verifying - interactions matched
-I, [2020-06-08T16:27:40.761010 #72346]  INFO -- : Cleared interactions
-I, [2020-06-08T16:27:40.765737 #72346]  INFO -- : Writing pact for AccountApi to /home/iann/dev/pact-node/client-api/pacts/clientapi-accountapi.json
+I, [2020-06-08T18:23:47.124950 #92963]  INFO -- : Verifying - interactions matched
+I, [2020-06-08T18:23:47.127843 #92963]  INFO -- : Cleared interactions
+I, [2020-06-08T18:23:47.131515 #92963]  INFO -- : Writing pact for AccountApi to /home/iann/dev/pact-node/client-api/pacts/clientapi-accountapi.json
