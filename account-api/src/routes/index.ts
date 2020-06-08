@@ -11,7 +11,7 @@ routes.use((req, _res, next) => {
   return next();
 });
 
-routes.get('/client/:clientID', async (req, res) => {
+routes.get('/balance/:clientID', async (req, res) => {
   return res.status(200).json(account);
 });
 
