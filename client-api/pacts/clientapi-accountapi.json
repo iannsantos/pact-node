@@ -1,0 +1,34 @@
+{
+  "consumer": {
+    "name": "ClientApi"
+  },
+  "provider": {
+    "name": "AccountApi"
+  },
+  "interactions": [
+    {
+      "description": "a request for account",
+      "providerState": "one client with your account",
+      "request": {
+        "method": "GET",
+        "path": "/client/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "clientID": 1,
+          "accountID": 10,
+          "balance": 100
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

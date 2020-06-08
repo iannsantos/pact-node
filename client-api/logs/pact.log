@@ -1,0 +1,49 @@
+I, [2020-06-08T12:25:30.672043 #19914]  INFO -- : Registered expected interaction GET /client/1
+D, [2020-06-08T12:25:30.672365 #19914] DEBUG -- : {
+  "description": "a request for account",
+  "providerState": "one client with your account",
+  "request": {
+    "method": "GET",
+    "path": "/client/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "clientID": 1,
+      "accountID": 10,
+      "balance": 100
+    }
+  },
+  "metadata": null
+}
+I, [2020-06-08T12:25:30.675015 #19914]  INFO -- : Received request GET /client/1
+D, [2020-06-08T12:25:30.675155 #19914] DEBUG -- : {
+  "path": "/client/1",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "User-Agent": "axios/0.19.2",
+    "Host": "127.0.0.1:1234",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-06-08T12:25:30.675370 #19914]  INFO -- : Found matching response for GET /client/1
+D, [2020-06-08T12:25:30.675456 #19914] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "clientID": 1,
+    "accountID": 10,
+    "balance": 100
+  }
+}
+I, [2020-06-08T12:25:30.680611 #19914]  INFO -- : Verifying - interactions matched
+I, [2020-06-08T12:25:30.683895 #19914]  INFO -- : Cleared interactions
+I, [2020-06-08T12:25:30.688127 #19914]  INFO -- : Writing pact for AccountApi to /home/iann/dev/pact-node/client-api/pacts/clientapi-accountapi.json
