@@ -11,7 +11,7 @@
       "providerState": "one client with your account",
       "request": {
         "method": "GET",
-        "path": "/client/1"
+        "path": "/balance/1"
       },
       "response": {
         "status": 200,

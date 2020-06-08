@@ -18,7 +18,7 @@ routes.get('/client/:id', async (req, res) => {
     clientID: Number(id),
   });
 
-  return res.status(201).json({ accountID, balance, clientID });
+  return res.status(200).json({ accountID, balance, clientID });
 });
 
 export default routes;

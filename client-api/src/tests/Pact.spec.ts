@@ -25,7 +25,7 @@ describe('Pact', () => {
           uponReceiving: 'a request for account',
           withRequest: {
             method: 'GET',
-            path: '/client/1',
+            path: '/balance/1',
           },
           willRespondWith: {
             status: 200,
@@ -38,7 +38,7 @@ describe('Pact', () => {
 
     it('get balance by client ID', async () => {
       const response: AxiosResponse = await axios.get(
-        `${provider.mockService.baseUrl}/client/1`,
+        `${provider.mockService.baseUrl}/balance/1`,
       );
       const clientInfo = response.data;
       expect(clientInfo).toHaveProperty('clientID');

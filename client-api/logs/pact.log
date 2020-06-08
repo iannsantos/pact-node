@@ -1,10 +1,10 @@
-I, [2020-06-08T15:44:39.179296 #61759]  INFO -- : Registered expected interaction GET /client/1
-D, [2020-06-08T15:44:39.179552 #61759] DEBUG -- : {
+I, [2020-06-08T16:27:40.747854 #72346]  INFO -- : Registered expected interaction GET /balance/1
+D, [2020-06-08T16:27:40.748158 #72346] DEBUG -- : {
   "description": "a request for account",
   "providerState": "one client with your account",
   "request": {
     "method": "GET",
-    "path": "/client/1"
+    "path": "/balance/1"
   },
   "response": {
     "status": 200,
@@ -19,9 +19,9 @@ D, [2020-06-08T15:44:39.179552 #61759] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2020-06-08T15:44:39.182521 #61759]  INFO -- : Received request GET /client/1
-D, [2020-06-08T15:44:39.182630 #61759] DEBUG -- : {
-  "path": "/client/1",
+I, [2020-06-08T16:27:40.750413 #72346]  INFO -- : Received request GET /balance/1
+D, [2020-06-08T16:27:40.750535 #72346] DEBUG -- : {
+  "path": "/balance/1",
   "query": "",
   "method": "get",
   "headers": {
@@ -32,8 +32,8 @@ D, [2020-06-08T15:44:39.182630 #61759] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2020-06-08T15:44:39.182840 #61759]  INFO -- : Found matching response for GET /client/1
-D, [2020-06-08T15:44:39.182950 #61759] DEBUG -- : {
+I, [2020-06-08T16:27:40.750789 #72346]  INFO -- : Found matching response for GET /balance/1
+D, [2020-06-08T16:27:40.750876 #72346] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json; charset=utf-8"
@@ -44,6 +44,6 @@ D, [2020-06-08T15:44:39.182950 #61759] DEBUG -- : {
     "balance": 100
   }
 }
-I, [2020-06-08T15:44:39.187908 #61759]  INFO -- : Verifying - interactions matched
-I, [2020-06-08T15:44:39.191158 #61759]  INFO -- : Cleared interactions
-I, [2020-06-08T15:44:39.195600 #61759]  INFO -- : Writing pact for AccountApi to /home/iann/dev/pact-node/client-api/pacts/clientapi-accountapi.json
+I, [2020-06-08T16:27:40.756292 #72346]  INFO -- : Verifying - interactions matched
+I, [2020-06-08T16:27:40.761010 #72346]  INFO -- : Cleared interactions
+I, [2020-06-08T16:27:40.765737 #72346]  INFO -- : Writing pact for AccountApi to /home/iann/dev/pact-node/client-api/pacts/clientapi-accountapi.json
