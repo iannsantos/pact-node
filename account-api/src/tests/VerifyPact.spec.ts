@@ -1,10 +1,11 @@
 import { Verifier } from '@pact-foundation/pact';
+import { APP_URL, PACT_BROKER_URL } from '../constants';
 
 describe('Pact verification', () => {
   it('checking if provider agrees with consumer', async () => {
     const verify = new Verifier({
-      providerBaseUrl: 'http://localhost:3334',
-      pactBrokerUrl: 'http://localhost',
+      providerBaseUrl: APP_URL,
+      pactBrokerUrl: PACT_BROKER_URL,
       provider: 'AccountApi',
       publishVerificationResult: true,
       providerVersion: '1.0.0',
