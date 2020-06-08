@@ -1,17 +1,22 @@
 import axios, { AxiosResponse } from 'axios';
+import { APP_URL } from '../constants';
 
 interface Response extends AxiosResponse {
-  data: { clientID: number; accountID: number; balance: number };
+  data: Account;
+}
+
+interface Account {
+  clientID: number;
+  accountID: number;
+  balance: number;
 }
 
 export default async function GetBalanceByClientID({
   clientID,
 }: {
   clientID: number;
-}): Promise<{ clientID: number; accountID: number; balance: number }> {
-  const response: Response = await axios.get(
-    `http://localhost:3334/balance/${clientID}`,
-  );
+}): Promise<Account> {
+  const response: Response = await axios.get(`${APP_URL}/balance/${clientID}`);
 
   return response.data;
 }

@@ -1,12 +1,11 @@
 import cors from 'cors';
 import express from 'express';
+import { APP_PORT, APP_URL } from './constants';
 import routes from './routes/index';
-
-const APP_PORT = 3333;
 
 const app = express();
 
-app.listen(APP_PORT, () => console.log(`[SERVER] Running on port ${APP_PORT}`));
+app.listen(APP_PORT, () => console.log(`[CLIENT API] Running on ${APP_URL}`));
 
 app.use(cors());
 app.use(express.json());

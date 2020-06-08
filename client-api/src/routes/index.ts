@@ -14,6 +14,10 @@ routes.use((req, _res, next) => {
 routes.get('/client/:id', async (req, res) => {
   const { id } = req.params;
 
+  if (Number(id) !== 1) {
+    return res.status(404).json({ message: "Client doesn't exist" });
+  }
+
   const { accountID, balance, clientID } = await GetBalanceByClientID({
     clientID: Number(id),
   });

@@ -1,8 +1,9 @@
 import { Publisher } from '@pact-foundation/pact';
 import path from 'path';
+import { PACT_BROKER_URL } from '../constants';
 
 const publish = new Publisher({
-  pactBroker: 'http://localhost',
+  pactBroker: PACT_BROKER_URL,
   pactFilesOrDirs: [path.resolve(process.cwd(), 'pacts')],
   consumerVersion: '1.0.0',
 });
